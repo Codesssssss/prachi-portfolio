@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prachi Raut - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0288d1;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #b3e5fc;
+        }
+
+        h1, h2 {
+            color: #0288d1;
+            margin-bottom: 20px;
+        }
+
+        .skills-list, .languages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill, .language {
+            background-color: #e1f5fe;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-info a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h1>Prachi Raut</h1>
+            <p>Seeking a dynamic role that capitalizes on my diverse skill set and passions, driving both personal growth and organizational success.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate Information Technology student at St. John College of Engineering and Management, Palghar. With a strong academic background and diverse skill set, I am eager to contribute to innovative projects and continue learning in the field of technology.</p>
+            <h3>Education</h3>
+            <ul>
+                <li>B.Tech/B.E. in Information Technology - St. John College of Engineering and Management, Palghar</li>
+                <li>Class XII - 81.5% (2021)</li>
+                <li>Class X - 80% (2019)</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill">Python</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">C</span>
+                <span class="skill">C#</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">MS Office</span>
+                <span class="skill">Word</span>
+            </div>
+            <h3>Languages</h3>
+            <div class="languages-list">
+                <span class="language">English</span>
+                <span class="language">Hindi</span>
+                <span class="language">Marathi</span>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Face Mask Detection using Machine Learning</h3>
+                <p>Developed a real-time face mask detection system using YOLOv5 (You Only Look Once, version 5) deep learning model. The project focuses on identifying whether individuals in images or videos are wearing face masks.</p>
+            </div>
+            <div class="project">
+                <h3>Agrorent</h3>
+                <p>Created a user-friendly online platform connecting farmers with a wide range of farming equipment available for rent. The website offers an extensive catalog of machinery, including tractors, plows, harvesters, and irrigation systems.</p>
+            </div>
+            <div class="project">
+                <h3>Stock Market Prediction</h3>
+                <p>Implemented a stock market prediction system using machine learning, leveraging historical data, statistical models, and algorithms to forecast future stock price movements.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <a href="tel:+919307568595">+91-9307568595</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:prachiraut7777@gmail.com">prachiraut7777@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('.section');
+
+            function smoothScroll(target) {
+                const element = document.querySelector(target);
+                window.scrollTo({
+                    top: element.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('href');
+                    smoothScroll(target);
+                });
+            });
+
+            function highlightNavOnScroll() {
+                let scrollPosition = window.scrollY;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active');
+                            }
+                        });
